@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochwelt</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./fonts.css">
+    <script src="./include.js"></script>
+    <link rel="icon" href="./img/logo_small.png" type="image/x-icon">
+</head>
+
+
+<body onload="includeHTML()">
+    <header w3-include-html="./templates/header.html"></header>
+    <section class="receipt">
+
+        <div class="contact" action="http://marcel-speerschneider.developerakademie.net/send_mail/send_mail.php"
+            method="POST">
+            <form class="form-contact">
+                <h2>Kontaktiere uns:</h2>
+
+                <input name="name" placeholder="Dein Name" type="text" required>
+                <input name="email" placeholder="Deine E-Mail-Adresse" type="email" required>
+                <textarea name="message" placeholder="Deine Nachricht an uns"></textarea>
+                <button class="btn" type="submit">Mail senden</button>
+            </form>
+            <aside>
+                <div class="qanda qanda-question" onclick="qanda_question1()">Frage: Wie kann ich ein Rezept auswählen?</div>
+                <div class="qanda qanda-answer" id="qanda-answer1" onclick="qanda_answer1()">
+                    Antwort: Du kannst auf der Rezeptseite nach einem bestimmten Rezept suchen,
+                    oder du navigierst durch unsere Kategorien, um ein passendes Rezept zu finden.
+                </div>
+                <div class="qanda qanda-question" onclick="qanda_question2()">Frage: Kann ich meine Rezepte teilen?</div>
+                <div class="qanda qanda-answer" id="qanda-answer2" onclick="qanda_answer2()">
+                    Antwort: Ja, du können deine Lieblingsrezepte mit Freunden und Familie über soziale Medien oder E-Mails teilen.
+                </div>
+                <div class="qanda qanda-question" onclick="qanda_question3()">Frage: Wie kann ich die Portionen ändern?</div>
+                <div class="qanda qanda-answer" id="qanda-answer3" onclick="qanda_answer3()">
+                    Antwort: Du kannst die Portionen eines Rezepts anpassen, indem du die Anzahl der Personen eingibst und bestätigst.
+                </div>
+                <div class="qanda qanda-question" onclick="qanda_question4()">Ich finde keine Antwort auf meine Frage.</div>
+                <div class="qanda qanda-answer" id="qanda-answer4" onclick="qanda_answer4()">
+                    Antwort: Kontaktiere uns gerne über unser Kontaktformular.
+                </div>
+            </aside>
+        </div>
+    </section>
+
+
+
+    <footer w3-include-html="./templates/footer.html"></footer>
+
+</body>
+
+</html>

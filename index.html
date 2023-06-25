@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kochwelt</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./fonts.css">
+  <script src="./include.js"></script>
+  <link rel="icon" href="./img/logo_small.png" type="image/x-icon">
+</head>
+
+<body onload="includeHTML()">
+
+  <div class="overflow">
+  <header w3-include-html="./templates/header.html"></header>
+
+  <section class="main">
+
+    <div class="main-content">
+      <img src="./img/indian-food.jpg" alt="indian food">
+
+      <div class="main-info">
+        <div>
+          <h1>Indisches Butter Chicken</h1>
+          <p>
+            Lassen Sie sich von unserem aromatischen Hähnchengericht verzaubern!
+            Wir marinieren die Hähnchenbrust zunächst in Paprika, Limonensaft, Salz, Joghurt, Cayennepfeffer, Garam
+            Masala Pulver, Ingwer und Knoblauchzehe und garen es anschließend im Ofen.
+            Zum Schluss würzen wir die Sauce mit Butter, Honig und Sahne und servieren es mit Reis oder Naan. Köstlich
+            und lecker!
+          </p>
+        </div>
+        <div class="btn-container">
+          <a href="./receipt.html" class="btn">Rezept öffnen</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-middle">
+
+    <div class="headline color-grey">
+      <h1 class="margin-block-end">Lust auf was Neues?</h1>
+    </div>
+    <div class="img-container-middle">
+      <a href=""><img src="./img/croissant.jpg" alt="" class="container-img">Frische Croissants</a>
+      <a href=""><img src="./img/croissant.jpg" alt="" class="container-img">Frische Croissants</a>
+      <a href=""><img src="./img/croissant.jpg" alt="" class="container-img">Frische Croissants</a>
+    </div>
+  </section>
+
+  <section class="container-bottom">
+    <div class="headline">
+      <h1 class="margin-block-end">Lust auf was Neues?</h1>
+    </div>
+    <div class="container-bottom-info">
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Vivamus finibus, magna vel volutpat feugiat,
+        eros lacus fringilla ipsum, vel mattis velit enim vel elit.</p>
+
+      <a>
+        <img src="./img/croissant.jpg" alt="croissant" class="container-img">
+      </a>
+
+    </div>
+
+  </section>
+
+  <footer w3-include-html="./templates/footer.html"></footer>
+
+</body>
+</div>
+</html>

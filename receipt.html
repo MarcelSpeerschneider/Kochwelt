@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochwelt</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./fonts.css">
+    <script src="./include.js"></script>
+    <link rel="icon" href="./img/logo_small.png" type="image/x-icon">
+</head>
+
+
+<body onload="includeHTML()">
+
+    <header w3-include-html="./templates/header.html"></header>
+
+    <section class="receipt">
+        <div class="head-container-receipt">
+            <h1>Indisches Butter Chicken</h1>
+            <img src="./img/indian-food.jpg" alt="Indisches Butter Chicken" class="receipt-img">
+        </div>
+        <div class="receipt-info">
+            <div class="receipt-info-data">
+                <img src="./img/icons/clock-regular.svg" alt="stopwatch">
+                45 Min
+            </div>
+            <div class="receipt-info-data">
+                <img src="./img/icons/brain-solid.svg" alt="brain-solid">
+                mittel
+            </div>
+            <div class="receipt-info-data">
+                <img src="./img/icons/calendar-alt-regular.svg" alt="calendar-alt-regular">
+                32.04.2023
+            </div>
+        </div>
+        <div class="ingredients-calculator">
+            Zutaten für
+            <input type="number" name="persons" id="persons" value="1" min="1" max="10">
+            <button class="btn" id="portion-btn" onclick="calculateServings()">Portionen</button>
+            <!-- <button class="btn" style="margin-left:20px;" onclick="location.reload()">Reset</button> -->
+        </div>
+        <table id='table1'>
+
+            <tr>
+                <td><span id="number1">200</span>g Hähnchenbrust</td>
+            </tr>
+            <tr>
+                <td><span id="number2">0.5</span> TL Paprikapulver</td>
+            </tr>
+            <tr>
+                <td><span id="number3">0.5</span> Becher Joghurt (150g)</td>
+            </tr>
+            <tr>
+                <td><span id="number4">0.5</span> TL Cayennepfeffer</td>
+            </tr>
+            <tr>
+                <td><span id="number5">0.5</span> EL Garam Masala</td>
+            </tr>
+            <tr>
+                <td><span id="number6">0.5</span> Zehe/n Knoblauch</td>
+            </tr>
+            <tr>
+                <td><span id="number7">0.5</span> Ingwer, daumengroß</td>
+            </tr>
+            <tr>
+                <td><span id="number8">2</span> EL Butter</td>
+            </tr>
+            <tr>
+                <td><span id="number9">0.5</span> Zwiebel(n)</td>
+            </tr>
+            <tr>
+                <td><span id="number10">250</span>g Tomaten, passierte</td>
+            </tr>
+            <tr>
+                <td><span id="number11">0.5</span> EL Zimt</td>
+            </tr>
+            <tr>
+                <td><span id="number12">75</span>ml Sahne</td>
+            </tr>
+        </table>
+
+        <div>
+            <h1>Zubereitung</h1>
+            <div class="receipt-info">
+                <div class="receipt-info-data">
+                    <img src="./img/icons/clock-regular.svg" alt="stopwatch">
+                    ca. 30 Min
+                </div>
+                <div class="receipt-info-data">
+                    <img src="./img/icons/clock-regular.svg" alt="stopwatch">
+                    Gesamtzeit ca. 45 Min
+                </div>
+            </div>
+            <p>
+                Hähnchenbrust in Stücke schneiden und mit einer Marinade aus Paprika, Limonensaft, Salz, Joghurt,
+                Cayennepfeffer, Garam Masala Pulver, Ingwer und Knoblauchzehe marinieren.
+                Mindestens eine Stunde, besser über Nacht einziehen lassen. Anschließend für 25 Minuten bei 200°C im
+                Ofen garen.
+                Zwiebeln in Butter anschwitzen, Tomaten, Zimt, Salz, Cayennepfeffer, Ingwer und Knoblauchzehe hinzufügen
+                und 20 Minuten köcheln lassen.
+                Butter, Honig und Sahne hinzufügen und mit dem Fleisch 2 Minuten köcheln lassen. Dazu Reis oder Naan
+                servieren und nach Belieben Koriandergrün hinzufügen.</p>
+
+            <h3> Rezept erstellt von</h3>
+
+        </div>
+
+        <div class="profile">
+
+            <img src="./img/profile_marcel.jpg" alt="profile">
+            Marcel
+
+        </div>
+
+    </section>
+
+    <footer w3-include-html="./templates/footer.html"></footer>
+
+</body>
+
+</html>
